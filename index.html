@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portal de Noticias Galacticas</title>
+
+    <link rel="stylesheet" href="styles/card.css" />
+    <script src="src/Components/CardNews.js" defer></script>
+    <!-- "defer", Só irá carregar o script depois que o DOM for carregado completamente-->
+
+    <script src="src/Components/TituloDinamico.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <!-- <div class="card">
+              <div class="card__left">
+                    <span>By Flavio Silva</span>
+                    <a href="#">Darth Vader Contrata Devs</a>
+                    <p>Darth Vader procura desenvolvedores que sabem trabalhar com componentes.</p>
+              </div>
+              <div class="card__right">
+                  <img src="assets/darth_m.jpg" alt="">
+              </div>
+          </div> -->
+    </div>
+
+    <card-news
+      autor="Flavio"
+      title="Darth Vader Contrata"
+      link-url="www.google.com.br"
+      photo="assets/darth_m.jpg"
+      content="Darth Vader procura desenvolvedores que sabem trabalhar com componentes."
+    ></card-news>     <!-- tag do components criado-->
+
+    <card-news
+      title="Yoda irá usar components"
+      link-url="www.uol.com.br"
+      content="Yoda se pronuncia sobre tudo."
+    ></card-news>
+
+    <!-- <titulo-dinamico titulo="Noticia urgente"></titulo-dinamico>
+      <titulo-dinamico titulo="Noticia Nova"></titulo-dinamico>  -->
+  </body>
+</html>
